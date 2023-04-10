@@ -5,20 +5,18 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
       <ul className={css.list}>
-        {options.map(key => {
-          return (
-            <li key={key}>
-              <button
-                className={css.button}
-                onClick={() => {
-                  onLeaveFeedback(key);
-                }}
-              >
-                {key}
-              </button>
-            </li>
-          );
-        })}
+        {options.map(key => (
+          <li key={key}>
+            <button
+              className={css.button}
+              onClick={() => {
+                onLeaveFeedback(key);
+              }}
+            >
+              {key}
+            </button>
+          </li>
+        ))}
         {/* <li>
           <button
             className={css.button}
