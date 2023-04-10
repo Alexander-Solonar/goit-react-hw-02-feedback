@@ -1,0 +1,11 @@
+.statistics-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.reviews {
+  display: inline-block;
+  margin-left: 5px;
+}

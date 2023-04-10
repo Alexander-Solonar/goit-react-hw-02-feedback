@@ -1,0 +1,12 @@
+.container {
+  width: 380px;
+  padding-top: 50px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.menu {
+  padding: 5px;
+  background-color: aqua;
+  border: 1px solid #000;
+}
