@@ -5,48 +5,18 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
       <ul className={css.list}>
-        {options.map(key => (
-          <li key={key}>
+        {options.map(mark => (
+          <li key={mark}>
             <button
               className={css.button}
               onClick={() => {
-                onLeaveFeedback(key);
+                onLeaveFeedback(mark);
               }}
             >
-              {key}
+              {mark}
             </button>
           </li>
         ))}
-        {/* <li>
-          <button
-            className={css.button}
-            onClick={() => {
-              onLeaveFeedback('good');
-            }}
-          >
-            Good
-          </button>
-        </li>
-        <li>
-          <button
-            className={css.button}
-            onClick={() => {
-              onLeaveFeedback('neutral');
-            }}
-          >
-            Neutral
-          </button>
-        </li>
-        <li>
-          <button
-            className={css.button}
-            onClick={() => {
-              onLeaveFeedback('bad');
-            }}
-          >
-            Bad
-          </button>
-        </li> */}
       </ul>
     </div>
   );
